@@ -9,22 +9,21 @@ function LoginPage() {
       const response = await fetch("http://localhost:5000/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        // अभी demo के लिए password को authKeyHash मान रहे हैं
+     
         body: JSON.stringify({ username, authKeyHash: password }),
       });
 
       const data = await response.json();
 
       if (!response.ok) {
-        // Error case → popup दिखाओ
         alert(data.error || "Login failed");
         return;
       }
 
-      // Success case → token save करो
+      // Success case → token save ो
       localStorage.setItem("token", data.token);
       alert("Login successful!");
-      // यहां vault page पर redirect कर सकते हैं
+     
       // window.location.href = "/vault";
     } catch (err) {
       alert("Server error, please try again.");
