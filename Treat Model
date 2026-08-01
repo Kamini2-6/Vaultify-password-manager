@@ -1,0 +1,16 @@
+# Threat Model - Vaultify Password Manager
+
+## Forgotten Master Password
+- **Scenario:** User forgets their master password.
+- **Impact:** All vault data becomes permanently inaccessible.
+- **Reason:** The vault encryption key is derived from the master password using PBKDF2. Without the password, the key cannot be regenerated.
+- **Why this is a feature:** Ensures zero-knowledge security. Prevents unauthorized recovery attempts.
+
+## Database Breach
+- **Scenario:** Attacker gains access to MongoDB.
+- **Impact:** Attacker only sees encrypted gibberish.
+- **Mitigation:** AES-GCM encryption ensures ciphertext is useless without the master password.
+
+## Network Attacks
+- **Scenario:** Man-in-the-Middle intercepts traffic.
+- **Mitigation:** HTTPS enforced, no plaintext transmission.
