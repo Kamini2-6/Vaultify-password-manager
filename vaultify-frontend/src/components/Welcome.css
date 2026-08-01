@@ -1,0 +1,56 @@
+.welcome-page {
+  background: linear-gradient(to right, teal, rgb(203, 209, 212));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-header {
+  background: #3f475a;
+  padding: 10px;
+  color: white;
+  border: 2px solid white;
+  width: 100%;
+  text-align: center;
+}
+
+.welcome-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 4px 20px rgba(0,0,0,0.3);
+  text-align: center;
+  margin-top: 40px;
+  width: 400px;
+}
+
+.welcome-box input {
+  width: 304px;
+  padding: 10px;
+  margin: 0px 0;
+}
+
+.welcome-box button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px 150px;
+  margin-top: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 30px; /* thoda space for error */
+}
+
+
+.error-message {
+  position: absolute;
+  left: 32px;        /* box ke left me chipka hua */
+  bottom: -16px;    /* input ke niche */
+  color: red;
+  font-size: 12px;
+}

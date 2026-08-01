@@ -1,0 +1,209 @@
+/* Page + Header + Box */
+.welcome-page {
+  background: linear-gradient(to right, teal, rgb(203, 209, 212));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.welcome-header {
+  background: #3f475a;
+  padding: 10px;
+  color: white;
+  border: 2px solid white;
+  width: 100%;
+  text-align: center;
+}
+
+.welcome-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 4px 20px rgba(0,0,0,0.3);
+  text-align: center;
+  margin: 40px;
+  width: 450px;
+  box-sizing:border-box;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tagline {
+  margin: 5px 0 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Input fields */
+.input-field, 
+.password-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.input-field input, 
+.password-field input {
+  flex: 1;
+  padding-right: 40px; /* space for icons */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Error state */
+.input-error {
+  border: 2px solid red;
+}
+
+.input-error-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 2px;
+  margin-left: 4px;
+}
+
+/* Eye icon */
+.eye-icon {
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+  color: gray;
+  font-size: 18px;
+  top: 12px;
+}
+
+
+/* Sign Up button spacing */
+.signup-btn {
+  margin-top: 20px;     /* gap between row and signup button */
+  width: 100%;          /* full width inside box */
+}
+
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #00c853, #64dd17);
+  color: #111;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 12px;
+  transition: background 0.3s ease;
+  gap:5px;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #64dd17, #00c853);
+}
+
+.btn-secondary {
+  background: #5a6a7b;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+  gap:5px;
+  white-space: nowrap;   /* text ko ek hi line me rakhega */
+  display: inline-flex;
+  align-items: center;   /* vertical center alignment */
+  justify-content: center; 
+}
+
+
+.btn-secondary:hover {
+  background: #2a2f37;
+}
+
+.copy-icon {
+  position: absolute;
+  right: 10px;   /* input ke andar right side */
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.copy-icon:hover {
+  color: green;
+}
+
+
+
+.btn-link {
+  background: transparent;
+  color: #0729c3;
+  border: none;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.btn-link:hover {
+  background: #8b96a5;
+}
+/* Fixed notification bar */
+.notification-fixed {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e6ffe6;
+  color: green;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+  
+}
+
+.notification-fixed p {
+  margin: 0;
+}
+
+/* QR + OTP section */
+.qr-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.qr-section img {
+  width: 180px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.qr-section input {
+  margin-bottom: 10px;
+}
