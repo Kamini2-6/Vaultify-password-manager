@@ -45,7 +45,6 @@ vaultify/
 │   │   │   ├── Welcome.css
 │   │   ├── Utils/crypto.js
 │   │   ├── App.js
-│   │   ├── App.css
 │   │   └── index.js
 │   ├── public/
 │   └── package.json
